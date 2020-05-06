@@ -19,7 +19,7 @@ function urlencode(str) {
              (code < 65 && code > 57) ||
              (code > 90 && code < 97 && code !== 95) ||
              (code > 122)) {
-      newStr += '%' + c.charCodeAt(0).toString(16);
+      newStr += '%' + code.toString(16);
     }
     // Alphanumeric characters
     else {
